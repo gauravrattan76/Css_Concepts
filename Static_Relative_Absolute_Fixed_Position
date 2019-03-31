@@ -1,0 +1,84 @@
+Static-
+________________________________________________
+
+Static means it will go with the flow. Means first div appears on top and then second div and then the third div.
+
+<div class="one">one</div>
+<div class="two">Two</div>
+<div class="three">Three</div>
+
+div{
+    width: 160px;
+    height: 40px;
+    padding: 20px;
+    margin: 4px;
+    border: 8px solid green;
+    background: yellow;
+}
+
+
+___________________________________________
+Rleative-
+
+Relative means relative to its original position
+
+div{
+    width: 160px;
+    height: 40px;
+    padding: 20px;
+    margin: 4px;
+    border: 8px solid green;
+    background: yellow;
+}
+
+.two{
+    position: relative;//so it will move 10px from the original psoitin wothout affecting the other elements.It doent disturb the enviromnrt.
+    bottom: 10px;
+}
+
+
+__________________________________________
+
+Absolute-It disturbs the enivorment.it reference to its parent position..ie.the main container.
+
+div{
+    width: 160px;
+    height: 40px;
+    padding: 20px;
+    margin: 4px;
+    border: 8px solid green;
+    background: yellow;
+}
+
+.two{
+    position: absolute;
+    top: 250px;
+}
+
+_________________________________________
+
+Fixed-fixes is like absolute but it refernce to the page not its parent.So fix will stay there even if we scrill down on the page.
+
+<div class="one">one</div>
+<div class="two">Two</div>
+<div class="three">Three</div>
+<div class="three">Three</div>
+<div class="three">Three</div>
+<div class="three">Three</div>
+<div class="three">Three</div>
+<div class="three">Three</div>
+<div class="three">Three</div>
+
+
+div{
+    width: 160px;
+    height: 40px;
+    padding: 20px;
+    margin: 4px;
+    border: 8px solid green;
+    background: yellow;
+}
+
+.two{
+    position: fixed;
+}
