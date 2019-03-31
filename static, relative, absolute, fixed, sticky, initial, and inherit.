@@ -1,0 +1,72 @@
+Static - this is the default value, all elements are in order as they appear in the document.
+Relative - the element is positioned relative to its normal position.
+Absolute - the element is positioned absolutely to its first positioned parent.
+Fixed - the element is positioned related to the browser window.
+Sticky - the element is positioned based on the user's scroll position.
+
+
+What Is Relative Positioning?
+When you set the position relative to an element, without adding any other positioning attributes (top, bottom, right, left) nothing will happen. When you add an additional position, such as left: 20px the element will move 20px to the right from its normal position. Here, you can see that this element is relative to itself. When the element moves, no other element on the layout will be affected.
+
+There is a thing you should keep in mind while setting position - relative to an element limits the scope of absolutely positioned child elements. This means that any element that is the child of this element can be absolutely positioned within this block.
+
+<div id="first_element">First element</div> 
+<div id="second_element">Second element</div>
+CSS
+#first_element { 
+  position: relative; 
+  left: 30px; 
+  top: 70px; 
+  width: 500px; 
+  background-color: #fafafa; 
+  border: solid 3px #ff7347; 
+  font-size: 24px; 
+  text-align: center; 
+} 
+#second_element { 
+  position: relative; 
+  width: 500px; 
+  background-color: #fafafa; 
+  border: solid 3px #ff7347; 
+  font-size: 24px; 
+  text-align: center; 
+}
+
+____________________________________
+
+What Is Absolute Positioning?
+This type of positioning allows you to place your element precisely where you want it.
+
+The positioning is done relative to the first relatively (or absolutely) positioned parent element. In the case when there is no positioned parent element, it will be positioned related directly to the HTML element (the page itself).
+
+An important thing to keep in mind while using absolute positioning is to make sure it is not overused, otherwise, it can lead to a maintenance nightmare.
+
+The next thing, yet again, is to show an example.
+
+In the example, the parent element has the position set to relative. Now, when you set the position of the child element to absolute, any additional positioning will be done relative to the parent element. The child element moves relative to the top of the parent element by 100px and right of the parent element by 40px.
+
+HTML
+<div id=”parent”>
+  <div id=”child”></div>
+</div>
+CSS
+#parent { 
+  position: relative; 
+  width: 500px; 
+  height: 400px; 
+  background-color: #fafafa; 
+  border: solid 3px #9e70ba; 
+  font-size: 24px; 
+  text-align: center; 
+} 
+#child { 
+  position: absolute; 
+  right: 40px; 
+  top: 100px; 
+  width: 200px; 
+  height: 200px; 
+  background-color: #fafafa; 
+  border: solid 3px #78e382; 
+  font-size: 24px; 
+  text-align: center; 
+}
