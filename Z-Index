@@ -1,0 +1,57 @@
+Z-Index-
+____________________________________________
+
+The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky).
+
+html-
+<div class="a">a</div>
+<div class="b">b</div>
+<div class="c">c</div>
+<div class="d">d</div>
+
+
+_______________________________
+Css-
+
+.a{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+.b{
+    height: 50px;
+    width: 60px;
+    background-color:green;
+    position: absolute;
+    top:0;
+}
+.c{
+    height: 50px;
+    width: 70px;
+    background-color:blue;
+    position: absolute;
+    top:0;
+    z-index: 1;//here it will be on top aand z index has to be a complete number cant be float
+}
+.d{
+    height: 50px;
+    width: 80px;
+    background-color:yellow;
+    position: absolute;
+    top:0;
+}
+
+__________________________________________
+
+CSS Syntax
+z-index: auto|number|initial|inherit;
+Property Values
+Value	Description	Play it
+auto	Sets the stack order equal to its parents. This is default	
+number	Sets the stack order of the element. Negative numbers are allowed	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit
