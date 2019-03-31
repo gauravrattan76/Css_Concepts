@@ -1,0 +1,25 @@
+Aigning the second div in the centre of the first div.
+
+
+<div class="out">
+  <div class="in"></div>
+</div>
+
+
+.out{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    /* position: relative; */
+    position: absolute;
+}
+
+.in{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);//The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+}
