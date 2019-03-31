@@ -1,0 +1,22 @@
+Visibility_Hidden-
+
+Element is there in the DOM but the visbility is hidden as a result there is a gap in html page
+
+<div class="one">Hello Gaurav</div>
+<div class="two">Harry Potter</div>
+
+
+.one{
+    visibility: hidden;
+}
+
+
+_________________________________
+Display None-
+
+
+.one{
+    display:none;
+}
+
+it wont leave space for it
