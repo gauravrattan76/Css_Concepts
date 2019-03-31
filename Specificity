@@ -1,0 +1,80 @@
+If we have two styles for the same element then browser has to decide which style it will take.
+
+
+Rule No.1-
+
+<div>Name</div>
+
+style-
+
+div{
+   background-color: green;
+}
+
+div{
+    background-color:red;
+ }
+ 
+ 
+ It will always take the second style.
+ _________________________________________________
+ 
+ Rule No.2-
+ 
+ <div class="name">Name</div>
+ 
+ 
+ div{
+   background-color: green;
+}
+
+div.name{//it will take this one ...because this is the more specific one
+    background-color:red;
+    width: 50px;
+ }
+ 
+ ________________________________________________
+ 
+ Rule No.3-
+ 
+ <div id="name">Name</div>
+ 
+ div{
+   background-color: green;
+}
+
+div#name{//it will take the id as id is more specific
+    background-color:blue;
+    width: 50px;
+ }
+ 
+ ____________________________________________________-
+ 
+ Rule No.4-
+ 
+ <div class="namec" id="name">Name</div>
+ 
+ div.namec{
+   background-color: green;
+}
+
+div#name{//still Id will win as id have higer priorty
+    background-color:blue;
+    width: 50px;
+ }
+ 
+ ________________________________
+ 
+ Rule No.5-
+ 
+ div.namec{
+   background-color: green !important;//this will get the importance
+}
+
+div#name{
+    background-color:blue;
+    width: 50px;
+ }
+ 
+ 
+ 
