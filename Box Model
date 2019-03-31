@@ -1,0 +1,17 @@
+In Css box model is a box wraps that aroind every single elemen in html.
+
+That contains content,padding,border,margin.
+
+div{
+    height: 20px;
+    width: 20px;
+    border: 20px solid red;
+    margin: 10px;
+    padding: 5px;
+    background-color: blue;
+    box-sizing: border-box;//it makes the border and everything part of the heighjt width we get a small size
+}
+
+Margins is from the page.
+border is the border in the element
+padding the space between the border and the wrapped element.
