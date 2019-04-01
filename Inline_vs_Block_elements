@@ -1,4 +1,42 @@
-HTML Block and Inline Elements
+HTML Block and Inline Elements-
+___________________________________________________________
+
+Block-Level and Inline Elements: The difference between <div> and <span>
+
+
+HTML is made up of various elements that act as the building blocks of web pages. For the purpose of styling, elements are divided into two categories: block-level elements and inline elements.
+
+In summary, a <span> element is used as an inline element and a <div> element as a block level element.
+
+The difference between the two elements is a commonly misunderstood concept of web design but it does not have to be!
+
+Basically, an inline element does not cause a line break (start on a new line) and does not take up the full width of a page, only the space bounded by its opening and closing tag. It is usually used within other HTML elements.
+
+Other examples of inline elements are:
+
+anchor <a> tag
+emphasis <em> tag
+image <img> tag
+A block-level element always starts on a new line and takes up the full width of a page, from left to right. A block-level element can take up one line or multiple lines and has a line break before and after the element.
+
+Other examples of the block-level tag are:
+
+Heading tags <h1> to <h6>
+List (Ordered, Unordered, Description and List Item) tags <ol> , <ul> ,<dl> , <li>
+Pre-formatted text tag <pre>
+Blockquote tag <blockquote>
+Visually,
+
+There doesn’t have to be a space between each element wrapped with a span tag as shown above.
+The <div> element is usually used as a container for other HTML elements and to separate them for the rest. The <div> element is an unstyled tag, in other words, using it does not change the look of an HTML element. Also, it has no required attribute.
+
+
+Notice the line break between the containers? That’s the <div> working
+The <span> element can be used as a container for HTML text. But essentially, it is used to style a certain text within a larger text element. The <span> element does not automatically style an HTML element. The <span> does notrequire an attribute too!
+
+
+Here, the span tag is used to give difference colors to different texts inside the paragraph tag.
+________________________________________________________________
 Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
 
 Block-level Elements
