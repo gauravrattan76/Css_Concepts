@@ -1,0 +1,43 @@
+________________________________________________________
+
+The :nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent.
+
+Important thing is that index starts with 1.
+
+n can be a number, a keyword, or a formula.
+
+Odd and even are keywords that can be used to match child elements whose index is odd or even (the index of the first child is 1).
+
+Here, we specify two different background colors for odd and even p elements:
+
+
+p:nth-child(2) {
+  background: red;
+}
+
+it will paint red the second child.
+
+__________________________________________________________
+
+style---
+
+
+p:nth-child(odd) {
+  background: red;
+}
+
+p:nth-child(even) {
+  background: blue;
+}
+
+_________________________________________
+
+Html-
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+
+<p><b>Note:</b> Internet Explorer 8 and earlier versions do not support the :nth-child() selector.</p>
+_____________________________________________________
+
+so we get the even p as blue and the odd p as red.
